@@ -1,0 +1,122 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<style>
+    .buton {
+        position: relative;
+        border: 0;
+        font: 300 14px 'Open Sans';
+        color: #FFFFFF;
+        padding: 10px 15px;
+        border-radius: 3px;
+        display: inline-block;
+        margin: 5px;
+        cursor: pointer;
+        overflow: hidden;
+        outline: none;
+        background: -webkit-linear-gradient(left, #2a83be 40px, #3498db 0);
+    }
+
+        .buton > span > i.fa {
+            margin-right: 20px;
+        }
+
+        .buton > * {
+            position: relative;
+            z-index: 5;
+        }
+
+    .buton-saga:after, .buton-sola:after, .buton-yukari:after, .buton-asagi:after {
+        position: absolute;
+        background: #2a83be;
+        width: 100%;
+        height: 100%;
+        content: "";
+        -webkit-transition: 1s cubic-bezier(0.165, 0.85, 0.45, 1);
+        transition: 1s cubic-bezier(0.165, 0.85, 0.45, 1);
+    }
+
+
+    .buton-sari {
+        background: -webkit-linear-gradient(left, #e67e22 40px, #f39c12 0);
+    }
+    .buton-sola:after {
+        top: 0;
+        right: -100%;
+    }
+   
+
+
+</style>
+<body>
+
+    <div class="overlay"></div>
+    <video controls="controls">
+        <source src="~/mp4/bg.mp4" type="video/mp4" />
+    </video>
+
+    <div class="masthead">
+        <div class="masthead-bg"></div>
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-12 my-auto">
+                    <div class="masthead-content text-white py-5 py-md-0">
+                        <h1 class="mb-3">  ÇOK YAKINDA HİZMETİNİZDEYİZ!!! </h1>
+                        <p class="mb-5">
+                            <marquee direction=right>ÇOK YAKINDA!</marquee>
+                            <strong>BROOVS</strong>! çok yakında!
+                            <marquee>ÇOK YAKINDA!</marquee>
+                        </p>
+                        <button class='buton buton-sola buton-sari'>
+
+                            <span><i class="fa fa-bolt"></i> Giriş </span>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="social-icons">
+        <ul class="list-unstyled text-center mb-0">
+            <li class="list-unstyled-item">
+                <a href="https://twitter.com/RaysoftYazilim">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </li>
+            <li class="list-unstyled-item">
+                <a href="https://www.facebook.com/raysoftyazilim/">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </li>
+            <li class="list-unstyled-item">
+                <a href="https://www.instagram.com/raysoftyazilim/">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div id="circle-container">
+        <div id="cc">
+            <div class="circle" id="five"></div>
+            <div class="circle" id="four"></div>
+            <div class="circle" id="three"></div>
+            <div class="circle" id="two"></div>
+            <div class="circle" id="one"></div>
+        </div>
+    </div>
+
+    <div id="mb">
+        <p>
+            Made By
+            <a href="https://codepen.io/budachb" target="_blank">Bradley Budach</a>
+        </p>
+    </div>
+
+</body>
+
+</html>
